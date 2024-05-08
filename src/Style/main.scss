@@ -14,19 +14,19 @@ $font-color-title: #faebd7;
 $font-color-text: #fffafa;
 
 body {
-  height: 100vh;
-  border-top: 5px groove;
-  border-right: 5px ridge;
-  border-bottom: 5px ridge;
-  border-left: 5px groove;
+  border-top: 10px groove;
+  border-right: 10px ridge;
+  border-bottom: 10px ridge;
+  border-left: 10px groove;
   border-color: $border-color;
   box-sizing: border-box;
-  margin: 0;
+
   background: #363d3d;
 }
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: $font-title;
   color: $font-color-title;
 }
@@ -73,4 +73,76 @@ li {
 .nav-link {
   text-decoration: none;
   color: inherit;
+}
+
+/* Description.css */
+.content {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+.profil {
+  width: 40%;
+  margin-left: 50px;
+  border-radius: 20px;
+  box-shadow: inset -1px 3px 8px 5px gold, 2px 5px 10px 0px #faebd7,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.description-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 43%;
+  margin-left: 80px;
+}
+
+.description-container::before,
+.description-container::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: 2px solid goldenrod;
+}
+
+.description-container::before {
+  top: 0;
+  left: 0;
+  border-width: 2px 0px 0px 2px;
+}
+
+.description-container::after {
+  bottom: 0;
+  right: 0;
+  border-width: 0px 2px 2px 0px;
+}
+
+.description-container h2 {
+  margin-bottom: 0;
+  font-size: 1.5em;
+}
+
+.description-container h3 {
+  text-shadow: 1px 0px 1px, 0px 1px 1px black, 2px 1px 1px black,
+    1px 2px 1px black, 3px 2px 1px black, 2px 3px 1px black, 4px 3px 1px black,
+    3px 4px 1px black, 5px 4px 1px black, 4px 5px 1px black, 6px 5px 1px #ffd700,
+    5px 6px 1px #ffd700, 7px 6px 1px #ffd700;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 1.5em;
+}
+
+.description-container h4 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+.description-container p {
+  margin-top: 0;
+  font-size: 1.25em;
 }
