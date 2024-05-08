@@ -64,8 +64,8 @@ li {
   cursor: pointer;
   color: #faebd7;
   font-weight: bolder;
-  box-shadow: inset -1px 3px 8px 5px gold, 2px 1px 10px 0px #faebd7,
-    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: inset -1px 3px 8px 5px gold, 2px 1px 10px 0px black,
+    5px 5px 15px 5px black;
 }
 .nav-list li:hover {
   background: $font-color-title;
