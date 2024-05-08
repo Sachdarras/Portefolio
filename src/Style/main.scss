@@ -62,7 +62,8 @@ li {
   padding: 15px;
   border-radius: 10px;
   cursor: pointer;
-  color: goldenrod;
+  color: #faebd7;
+  font-weight: bolder;
   box-shadow: inset -1px 3px 8px 5px gold, 2px 1px 10px 0px #faebd7,
     5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
@@ -125,6 +126,10 @@ li {
 .description-container h2 {
   margin-bottom: 0;
   font-size: 1.5em;
+  text-shadow: 1px 0px 1px, 0px 1px 1px black, 2px 1px 1px black,
+    1px 2px 1px black, 3px 2px 1px black, 2px 3px 1px black, 4px 3px 1px black,
+    3px 4px 1px black, 5px 4px 1px black, 4px 5px 1px black, 6px 5px 1px #ffd700,
+    5px 6px 1px #ffd700, 7px 6px 1px #ffd700;
 }
 
 .description-container h3 {
@@ -145,4 +150,41 @@ li {
 .description-container p {
   margin-top: 0;
   font-size: 1.25em;
+}
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 50px;
+}
+.skills-container h2 {
+  font-size: 2rem;
+  text-shadow: 1px 0px 1px, 0px 1px 1px black, 2px 1px 1px black,
+    1px 2px 1px black, 3px 2px 1px black, 2px 3px 1px black, 4px 3px 1px black,
+    3px 4px 1px black, 5px 4px 1px black, 4px 5px 1px black, 6px 5px 1px #ffd700,
+    5px 6px 1px #ffd700, 7px 6px 1px #ffd700;
+}
+.logo {
+  width: 50%;
+}
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.skills-container ul {
+  margin-right: 30px;
+  margin-left: 30px;
+  padding: 25px;
+  box-shadow: inset 1px 1px 5px 5px gold, 2px 5px 10px 0px black,
+    5px 5px 15px 5px black;
+  background: #faebd7;
+  border-radius: 20px;
+}
+.skills-container li {
+  list-style: none;
+}
+.footer-container {
+  text-align: center;
 }

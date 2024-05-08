@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <div className="footer-container">
-      <p>Copyright Crédit</p>
+      <p> &#xA9; Copyright Crédit by ASD</p>
     </div>
   );
 }
