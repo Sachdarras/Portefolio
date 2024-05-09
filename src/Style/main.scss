@@ -188,3 +188,131 @@ li {
 .footer-container {
   text-align: center;
 }
+
+// ProjectCard.scss
+
+.projectcard-container {
+  width: 100%;
+  overflow: hidden;
+  margin: 10px auto;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 1s ease;
+}
+
+.project {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  width: 90%;
+  height: 90%;
+  box-shadow: inset 1px 1px 5px 5px gold, 2px 5px 10px 0px black,
+    5px 5px 15px 5px black;
+  background: #faebd7;
+  border-radius: 20px;
+}
+
+.img-project {
+  width: 60%;
+  border-radius: 20px;
+  box-shadow: inset 1px 1px 5px 5px gold, 2px 5px 10px 0px black,
+    5px 5px 15px 5px black;
+}
+
+.project h4 {
+  font-size: 2rem;
+  text-shadow: 1px 0px 1px black, 0px 1px 1px black, 2px 1px 1px black,
+    1px 2px 1px black, 3px 2px 1px black, 2px 3px 1px black, 4px 3px 1px black,
+    3px 4px 1px black, 5px 4px 1px black, 6px 5px 1px #ffd700,
+    5px 6px 1px #ffd700, 7px 6px 1px #ffd700;
+}
+
+.project p {
+  color: black;
+  padding: 2em;
+  font-size: 1.25em;
+}
+
+.project li {
+  list-style: none;
+  padding: 10px;
+}
+
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: black;
+  font-weight: bolder;
+  box-shadow: inset -1px 3px 8px 5px gold, 2px 1px 10px 0px black,
+    5px 5px 15px 5px black;
+}
+
+.project-link:hover {
+  color: black;
+  background: white;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s;
+  z-index: 1;
+}
+
+.carousel-control:hover {
+  color: black;
+}
+
+.carousel-control:nth-child(1) {
+  left: 10px;
+}
+
+.carousel-control:nth-child(2) {
+  right: 10px;
+}
+
+@keyframes slide-in-next {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-prev {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.carousel-inner.next {
+  animation: slide-in-next 1s ease;
+}
+
+.carousel-inner.prev {
+  animation: slide-in-prev 1s ease;
+}
