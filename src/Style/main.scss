@@ -20,9 +20,9 @@ body {
   border-left: 10px groove;
   border-color: $border-color;
   box-sizing: border-box;
-
-  background: #363d3d;
+  background: #3a3e40;
 }
+
 h1,
 h2,
 h3,
@@ -30,27 +30,32 @@ h4 {
   font-family: $font-title;
   color: $font-color-title;
 }
+
 p,
 li {
   font-family: $font-text;
   color: $font-color-text;
 }
+
 .header-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .logoasd {
   width: 300px;
+  background: none;
 }
+
 .header-title {
   font-size: 3em;
-
   text-shadow: 1px 0px 1px, 0px 1px 1px black, 2px 1px 1px black,
     1px 2px 1px black, 3px 2px 1px black, 2px 3px 1px black, 4px 3px 1px black,
     3px 4px 1px black, 5px 4px 1px black, 4px 5px 1px black, 6px 5px 1px #ffd700,
     5px 6px 1px #ffd700, 7px 6px 1px #ffd700;
 }
+
 .nav-list {
   display: flex;
   flex-direction: row;
@@ -61,6 +66,7 @@ li {
   margin: 10px;
   font-size: 1.5em;
 }
+
 .nav-list li {
   padding: 15px;
   border-radius: 10px;
@@ -70,10 +76,12 @@ li {
   box-shadow: inset -1px 3px 8px 5px gold, 2px 1px 10px 0px black,
     5px 5px 15px 5px black;
 }
+
 .nav-list li:hover {
   background: $font-color-title;
   color: black;
 }
+
 .nav-link {
   text-decoration: none;
   color: inherit;
@@ -153,12 +161,14 @@ li {
   margin-top: 0;
   font-size: 1.25em;
 }
+
 .skills-container {
   display: flex;
   flex-direction: column;
   text-align: center;
   margin-top: 50px;
 }
+
 .skills-container h2 {
   font-size: 2rem;
   text-shadow: 1px 0px 1px, 0px 1px 1px black, 2px 1px 1px black,
@@ -166,10 +176,14 @@ li {
     3px 4px 1px black, 5px 4px 1px black, 4px 5px 1px black, 6px 5px 1px #ffd700,
     5px 6px 1px #ffd700, 7px 6px 1px #ffd700;
 }
+
 .logo {
-  width: 100px;
-  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 40%;
 }
+
 .logo-container {
   display: flex;
   flex-direction: row;
@@ -185,14 +199,16 @@ li {
   background: #faebd7;
   border-radius: 20px;
 }
+
 .skills-container li {
   list-style: none;
 }
+
 .footer-container {
   text-align: center;
 }
 
-// ProjectCard.scss
+// ProjectCard
 
 .projectcard-container {
   width: 100%;
@@ -335,6 +351,7 @@ li {
   border-radius: 20px;
   background-color: #faebd7;
 }
+
 .info-container li {
   list-style: none;
   display: flex;
@@ -343,14 +360,70 @@ li {
   padding: 10px;
   color: #363d3d;
 }
+
 .imginfo {
   width: 50px;
   margin-right: 20px;
 }
+
 .info-container a {
   text-decoration: none;
   color: inherit;
 }
+
 .info-container a:hover {
   color: #ffd700;
+}
+
+@media only screen and (max-width: 750px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .profil,
+  .description-container {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .description-container h2 {
+    font-size: 1.2em;
+  }
+
+  .description-container h3 {
+    font-size: 1.2em;
+  }
+
+  .description-container h4 {
+    font-size: 1.2em;
+  }
+
+  .description-container p {
+    font-size: 1em;
+  }
+
+  .skills-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    width: 95%;
+  }
+
+  .project h4 {
+    font-size: 1.5rem;
+  }
+
+  .project p {
+    font-size: 1rem;
+  }
+
+  .project-link {
+    font-size: 1rem;
+  }
+
+  .info-container {
+    width: 90%;
+  }
 }

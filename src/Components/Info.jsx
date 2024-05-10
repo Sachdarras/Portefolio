@@ -25,6 +25,10 @@ function Info() {
           06-65-55-31-32
         </li>
         <li>
+          <img src={mail} className="imginfo" />
+          sachdarras@gmail.com
+        </li>
+        <li>
           <a
             href="https://github.com/Sachdarras"
             target="_blank"
