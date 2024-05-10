@@ -41,7 +41,7 @@ li {
   align-items: center;
 }
 .logoasd {
-  width: 15%;
+  width: 300px;
 }
 .header-title {
   font-size: 3em;
@@ -79,7 +79,6 @@ li {
   color: inherit;
 }
 
-/* Description.css */
 .content {
   display: flex;
   flex-direction: row;
@@ -87,7 +86,7 @@ li {
 }
 
 .profil {
-  width: 40%;
+  width: 600px;
   margin-left: 50px;
   border-radius: 20px;
   box-shadow: inset -1px 3px 8px 5px gold, 2px 5px 10px 0px #faebd7,
@@ -168,7 +167,8 @@ li {
     5px 6px 1px #ffd700, 7px 6px 1px #ffd700;
 }
 .logo {
-  width: 50%;
+  width: 100px;
+  padding: 20px;
 }
 .logo-container {
   display: flex;
@@ -318,4 +318,39 @@ li {
 
 .carousel-inner.prev {
   animation: slide-in-prev 1s ease;
+}
+
+//contact
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset -1px 3px 8px 5px gold, 2px 1px 10px 0px black,
+    5px 5px 15px 5px black;
+  width: 600px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  background-color: #faebd7;
+}
+.info-container li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 10px;
+  color: #363d3d;
+}
+.imginfo {
+  width: 50px;
+  margin-right: 20px;
+}
+.info-container a {
+  text-decoration: none;
+  color: inherit;
+}
+.info-container a:hover {
+  color: #ffd700;
 }

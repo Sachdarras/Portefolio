@@ -1,5 +1,3 @@
-// ProjectCard.js
-
 import { useState } from "react";
 
 import gopast from "../assets/project/Gopastorbacktofuture.png";
