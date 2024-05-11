@@ -302,9 +302,15 @@ li {
 .next {
   left: -10px;
 }
+.next img {
+  width: 50px;
+}
 
 .prev {
   right: -10px;
+}
+.prev img {
+  width: 50px;
 }
 
 @keyframes slide-in-next {
@@ -419,7 +425,9 @@ li {
   .project p {
     font-size: 1rem;
   }
-
+  .img-project {
+    width: 70%;
+  }
   .project-link {
     font-size: 1rem;
   }
