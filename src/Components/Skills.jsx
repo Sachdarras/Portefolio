@@ -8,7 +8,7 @@ import git from "../assets/skills/git-icon.svg";
 import npm from "../assets/skills/npm.svg";
 import github from "../assets/skills/github-icon-1.svg";
 import bash from "../assets/skills/git-bash.svg";
-
+import figma from "../assets/skills/figma-5.svg";
 const skills = [
   { name: "Html", img: html },
   { name: "CSS", img: css },
@@ -20,6 +20,7 @@ const skills = [
   { name: "npm", img: npm },
   { name: "GitHub", img: github },
   { name: "GitBash", img: bash },
+  { name: "Figma", img: figma },
 ];
 
 function Skills() {
