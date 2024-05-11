@@ -4,7 +4,7 @@ import phone from "../assets/info/icons8-téléphone-94.png";
 import mail from "../assets/info/icons8-email-94.png";
 import github from "../assets/info/github.png";
 import linkedin from "../assets/info/icons8-linkedin-94.png";
-import cvasdi from "../assets/CV/cvasdi.png";
+import cvasdi from "/src/assets/CV/cvasdi.png";
 function Info() {
   return (
     <>
