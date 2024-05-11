@@ -475,7 +475,13 @@ li {
   }
 
   .info-container {
-    width: 90%;
+    width: 95%;
+  }
+  .info-container li {
+    font-size: 1.2rem;
+  }
+  .imginfo {
+    width: 10%;
   }
   .cv {
     width: 80%;
