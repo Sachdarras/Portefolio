@@ -5,6 +5,7 @@ import mail from "../assets/info/icons8-email-94.png";
 import github from "../assets/info/github.png";
 import linkedin from "../assets/info/icons8-linkedin-94.png";
 import cvasdi from "../assets/cvasdi.png";
+import cvASD from "../assets/cvasd.pdf";
 function Info() {
   return (
     <>
@@ -55,7 +56,7 @@ function Info() {
       <div className="cv-container">
         <h2>Mon CV</h2>
         <img src={cvasdi} className="cv" alt="CV alexandre-sacha Darras" />
-        <a href="../assets/cvasd.pdf" download="cvASD.pdf">
+        <a href={cvASD} download="cvASD.pdf">
           <button className="button-cv" type="button">
             Télècharger mon CV
           </button>
