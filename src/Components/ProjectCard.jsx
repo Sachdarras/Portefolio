@@ -4,6 +4,8 @@ import gopast from "../assets/project/Gopastorbacktofuture.png";
 import locationmap from "../assets/project/Crewdragonlocationmap.png";
 import starwild from "../assets/project/Star Wild.gif";
 import agendstrauss from "../assets/project/agendstrauss.png";
+import next from "../assets/arrow/next.png";
+import prev from "../assets/arrow/prev.png";
 
 const projects = [
   {
@@ -106,11 +108,11 @@ function ProjectCard() {
             </ul>
           </div>
         </div>
-        <button className="carousel-control prev" onClick={prevProject}>
-          &gt;
-        </button>
         <button className="carousel-control next" onClick={nextProject}>
-          &lt;
+          <img src={prev} />
+        </button>
+        <button className="carousel-control prev" onClick={prevProject}>
+          <img src={next} />
         </button>
       </div>
     </div>
