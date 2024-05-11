@@ -381,6 +381,39 @@ li {
 .info-container a:hover {
   color: #ffd700;
 }
+.cv-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cv-container h2 {
+  text-shadow: 1px 0px 1px black, 0px 1px 1px black, 2px 1px 1px black,
+    1px 2px 1px black, 3px 2px 1px black, 2px 3px 1px black, 4px 3px 1px black,
+    3px 4px 1px black, 5px 4px 1px black, 6px 5px 1px #ffd700,
+    5px 6px 1px #ffd700, 7px 6px 1px #ffd700;
+}
+.cv {
+  width: 600px;
+  box-shadow: inset -1px 3px 8px 5px gold, 2px 1px 10px 0px black,
+    5px 5px 15px 5px black;
+  border-radius: 10px;
+}
+.button-cv {
+  margin-top: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: black;
+  font-weight: bolder;
+  background: #faebd7;
+  box-shadow: inset -1px 3px 8px 5px gold, 2px 1px 10px 0px black,
+    5px 5px 15px 5px black;
+}
+.button-cv:hover {
+  color: goldenrod;
+  background: whitesmoke;
+}
 
 @media only screen and (max-width: 750px) {
   .content {
@@ -434,5 +467,8 @@ li {
 
   .info-container {
     width: 90%;
+  }
+  .cv {
+    width: 80%;
   }
 }
