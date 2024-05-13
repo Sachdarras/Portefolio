@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import gopast from "../assets/project/Gopastorbacktofuture.png";
 import locationmap from "../assets/project/Crewdragonlocationmap.png";
-import starwild from "../assets/project/Star Wild.gif";
+import starwild from "../assets/project/Star Wild.png";
 import agendstrauss from "../assets/project/agendstrauss.png";
 import next from "../assets/arrow/next.png";
 import prev from "../assets/arrow/prev.png";
