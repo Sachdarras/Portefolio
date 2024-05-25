@@ -1,48 +1,7 @@
 import { useState } from "react";
-
-import gopast from "../assets/project/Gopastorbacktofuture.png";
-import locationmap from "../assets/project/Crewdragonlocationmap.png";
-import starwild from "../assets/project/Star Wild.png";
-import agendstrauss from "../assets/project/agendstrauss.png";
-
+import projects from "../data/projectData";
 import next from "../assets/arrow/next.png";
 import prev from "../assets/arrow/prev.png";
-
-const projects = [
-  {
-    name: "Go past or back to Future",
-    img: gopast,
-    description:
-      "Voyage Temporel Humoristique : une chronologie animée décalée de l'histoire de l'humanité, de l'âge de pierre aux voyages dans l'espace. Avec des personnages loufoques et des clins d'œil humoristiques, découvrez le passé de manière ludique et pédagogique !",
-    lien: "https://sachdarras.github.io/WCS-P1-Chronologie-Anim-e/",
-    repo: "https://github.com/Sachdarras/WCS-P1-Chronologie-Anim-e",
-  },
-
-  {
-    name: "Crew-Dragon-Location-Map",
-    img: locationmap,
-    description:
-      "J'ai créé une carte interactive qui permet de localiser tous les élèves de ma promotion à travers la France. Cette carte facilite la communication et les rencontres entre les membres de la promo, en leur permettant de visualiser où se trouvent leurs camarades géographiquement.",
-    lien: "https://sachdarras.github.io/Crew-Dragon-Location-Map/",
-    repo: "https://github.com/Sachdarras/Crew-Dragon-Location-Map",
-  },
-  {
-    name: "Star-Wild",
-    img: starwild,
-    description:
-      "Bienvenue sur Star Wild, votre passerelle virtuelle vers les merveilles et les mystères du système solaire, présentée dans une expérience immersive en 3D. Explorez les planètes, les lunes et les astéroïdes avec un système de carte interactif qui vous permet de plonger dans les détails de chaque corps céleste.",
-    lien: "https://star-wild.netlify.app/",
-    repo: "https://github.com/Sachdarras/JS-RemoteFR-CrewDragon-P2-Team3",
-  },
-  {
-    name: "AgendStrauss",
-    img: agendstrauss,
-    description:
-      "L'agend strauss est un ensemble de fonctionalité avec une todo-list,une calculatrice,un agenda et une horloge numérique",
-    lien: "https://agendstrauss.netlify.app/",
-    repo: "https://github.com/Sachdarras/agendStrauss",
-  },
-];
 
 function ProjectCard() {
   const [currentIndex, setCurrentIndex] = useState(0);
