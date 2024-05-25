@@ -94,8 +94,8 @@ li {
 }
 
 .profil {
-  width: 600px;
-  margin-left: 50px;
+  width: 350px;
+  margin: auto;
   border-radius: 20px;
   box-shadow: inset -1px 3px 8px 5px gold, 2px 5px 10px 0px #faebd7,
     5px 5px 15px 5px rgba(0, 0, 0, 0);
@@ -178,7 +178,7 @@ li {
 }
 
 .logo {
-  width: 80px;
+  width: 70px;
 }
 
 .logo-container {
@@ -485,5 +485,10 @@ li {
   }
   .cv {
     width: 80%;
+  }
+  .nav-list {
+    font-size: 1.2em;
+    margin: auto;
+    padding: 0.5rem;
   }
 }
