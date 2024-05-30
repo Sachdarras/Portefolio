@@ -4,8 +4,8 @@ import phone from "../assets/info/icons8-téléphone-94.png";
 import mail from "../assets/info/icons8-email-94.png";
 import github from "../assets/info/github.png";
 import linkedin from "../assets/info/icons8-linkedin-94.png";
-import cvasdi from "../assets/CV/cv-asd-finalv-i.png";
-import cvASD from "../assets/CV/cv-asd-finalversion.pdf";
+import cvasdi from "../assets/CV/CV-ASDi.png";
+import cvASD from "../assets/CV/CV-ASD.pdf";
 function Info() {
   return (
     <>
