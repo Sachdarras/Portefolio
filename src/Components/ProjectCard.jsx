@@ -42,9 +42,12 @@ function ProjectCard() {
               src={projects[currentIndex].img}
               alt={projects[currentIndex].name}
             />
-
             <p>{projects[currentIndex].description}</p>
-
+            <div className="techno-container">
+              {projects[currentIndex].techno.map((tech, index) => (
+                <img key={index} src={tech} alt="technology icon" className="tech-icon" />
+              ))}
+            </div>
             <ul>
               <li>
                 <a
@@ -70,10 +73,10 @@ function ProjectCard() {
           </div>
         </div>
         <button className="carousel-control next" onClick={nextProject}>
-          <img src={prev} />
+          <img src={prev} alt="Next" />
         </button>
         <button className="carousel-control prev" onClick={prevProject}>
-          <img src={next} />
+          <img src={next} alt="Previous" />
         </button>
       </div>
     </div>

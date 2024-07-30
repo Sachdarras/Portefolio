@@ -261,12 +261,14 @@ li {
 .project p {
   color: black;
   padding: 2em;
-  font-size: 1.25em;
+  font-size: 1.5em;
+  line-height: 1.5;
 }
 
 .project li {
   list-style: none;
-  padding: 10px;
+  padding: 20px;
+  margin: 40px;
 }
 
 .project-link {
@@ -279,6 +281,8 @@ li {
   font-weight: bolder;
   box-shadow: inset -1px 3px 8px 5px gold, 2px 1px 10px 0px black,
     5px 5px 15px 5px black;
+   
+   
 }
 
 .project-link:hover {
@@ -337,6 +341,20 @@ li {
 
 .carousel-inner.prev {
   animation: slide-in-prev 1s ease;
+}
+.techno-container{display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+ box-shadow: inset -1px 3px 8px 5px gold, 2px 1px 10px 0px black,
+    5px 5px 15px 5px black;
+  border-radius: 10px;
+  padding: 20px;
+  margin:30px
+}
+
+.tech-icon{
+  width: 70px;
 }
 
 //contact
@@ -412,6 +430,7 @@ li {
 }
 
 @media only screen and (max-width: 1024px) {
+  body{height: 100vh;}
   h1 {
     text-align: center;
   }
@@ -491,4 +510,5 @@ li {
     margin: auto;
     padding: 0.5rem;
   }
+  .tech-icon{width:90%}
 }
